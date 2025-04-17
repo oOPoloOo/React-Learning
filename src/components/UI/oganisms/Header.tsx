@@ -8,6 +8,7 @@ const HeaderS = styled.header`
     padding: 0;
     height: 84px;
     width: auto;
+    min-width: 240px;
     background-color: lightblue;
    
     display: flex;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import LogoImg from '../../../assets/WebLogo.png';
+import Media from '../../../contexts/MediaContext';
 
 
 const WebLogo = styled.div`     
@@ -20,10 +21,14 @@ const WebLogo = styled.div`
 `;
 
 const NavLogo = () => {
+    Media
+    const notSmallResolution = Media("(min-width:410px)", true);
     return (         
-        <WebLogo>
+        <WebLogo>            
             <img src={LogoImg} alt="WebLogo" />
-            <h2>MY-GAME-LIST</h2>
+            {
+               notSmallResolution && <h2>MY-GAME-LIST</h2>
+            }
         </WebLogo> 
     );
 }
