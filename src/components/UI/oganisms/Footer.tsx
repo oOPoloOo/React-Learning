@@ -17,8 +17,6 @@ const FooterS = styled.footer`
 const Footer = () => {
     const {showFooter} = useContext(FooterContext);
 
-
-    console.log("Foteryje " + showFooter); 
     return ( 
         
         <FooterS >
