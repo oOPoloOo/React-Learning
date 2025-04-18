@@ -109,14 +109,14 @@ const ToRegistrationLoginPage = () => {
                 <Title>Welcome ghost!</Title>
                 <Subtitle>I mean guest..</Subtitle>                     
                     
-                <Link to={`register`}>                 
+                <Link to="/register">                 
                     <AuthButton>     
                         <AppRegistrationIcon />                    
                         Continue with Registrationn
                     </AuthButton>              
                 </Link>                     
                    
-                <Link to={`login`}>                 
+                <Link to="/login">                  
                     <AuthButton>
                         <PasswordIcon />
                         Continue with Login
@@ -131,7 +131,7 @@ const ToRegistrationLoginPage = () => {
                 </Footer>
             </Container>
         </ToPage>
-     );
+    );
 }
  
 export default ToRegistrationLoginPage;

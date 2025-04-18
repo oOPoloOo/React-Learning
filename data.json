@@ -1,0 +1,31 @@
+{
+  "users": [
+    {
+      "id": "0591fe2e-57e4-4bba-a87e-cb59cd58c944",
+      "username": "Rokas",
+      "email": "rokas.petrunas@example.com",
+      "password": "$2b$10$62hqUhcSWTa2X4N/mZ6rGOzQcDrJ3SzFbYpAL0pX4Ie6QsrSAhZXy",
+      "passwordText": "Tomas123!",
+      "role": "customer",
+      "joined": "2024-04-16T08:08:39.439Z"
+    },
+    {
+      "id": "3780ec44-c37b-406f-b43b-a568def29e3c",
+      "username": "Srekas",
+      "email": "srekas@gmail.com",
+      "password": "$2b$10$yp3YhDYa2TUMEj/eJTdgq.YyaLsU9WGpooYMjvGvK.XQ5xg1ngQtm",
+      "passwordText": "Tomas123!",
+      "role": "admin",
+      "joined": "2025-04-16T08:08:39.439Z"
+    },
+    {
+      "id": "d22dba38-01ce-47d8-adc4-7c18c78ceab2",
+      "username": "Kazys",
+      "email": "kazys@info.com",
+      "password": "$2b$10$Er.f.k2JeqzMn42pJHCKHOnV1fkJYeSd6njybcrwjJswtptudZbx.",
+      "passwordText": "123456789Aa!",
+      "role": "customer",
+      "joined": "2025-04-18T06:50:27.106Z"
+    }
+  ]
+}

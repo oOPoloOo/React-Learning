@@ -7,16 +7,19 @@ import { useContext } from 'react';
 import FooterContext from '../../../contexts/FoooterContext';
 
 const HeaderS = styled.header`
-    margin: 0;
-    padding: 0;
-    height: 84px;
-    width: auto;
-    min-width: 240px;
-    background-color: #531750;
    
     display: flex;
     justify-content: center;
     align-items: center; 
+   
+    margin: 0;
+    padding: 0;
+    height: 84px;
+    /* width: auto; */
+    min-width: 240px;
+    background-color: #531750;
+   
+   
      
     > div 
     {   
