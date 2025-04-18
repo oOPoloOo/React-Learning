@@ -5,6 +5,8 @@ import SearchButton from '../atoms/SearchButton';
 import { Link } from 'react-router';
 import { useContext } from 'react';
 import FooterContext from '../../../contexts/FoooterContext';
+import UsersContext from '../../../contexts/UsersContext';
+import { UsersContextTypes } from '../../../types';
 
 const HeaderS = styled.header`
    
@@ -53,28 +55,44 @@ const HeaderS = styled.header`
             align-items: center;
             gap: 15px;              
         }
-
     }
 `;
 
-
-
 const Header = () => {
+    const { loggedInUser, setLoggedInUser } = useContext(UsersContext) as UsersContextTypes;
 
     const {showFooter} = useContext(FooterContext);
-    console.log(showFooter);
+    console.dir("Header loggedInUser", loggedInUser);
     return (  
         <HeaderS>
             <div>          
                 <a href="">
-                    <NavLogo></NavLogo>             
+                    <Link to={`/`}>
+                        <NavLogo></NavLogo>  
+                    </Link>           
                 </a> 
                 
                 <div className={`${showFooter ? 'flex': 'hidden'}`}>
-                    <Link to={`/to`}>                 
-                        <LoginBtn/>
-                    </Link>
-                    <SearchButton/>
+                    {loggedInUser ? 
+                        (
+                            <>    
+                            <Link to={`/from`}>                             
+                               <LoginBtn data={loggedInUser.photo} key={loggedInUser.id}/>
+                               </Link>
+                               <SearchButton/>
+                            </>
+                        ) 
+                        : 
+                        (
+                            <>
+                                <Link to={`/to`}>                 
+                                    <LoginBtn data= ""/>
+                                </Link>
+                                <SearchButton/>
+                            </>
+                        )
+                    }                    
+                    
                 </div>
             </div>
         </HeaderS>

@@ -196,7 +196,7 @@ const LoginPage = () => {
                             </div>
                          
                             <AuthButton type="submit" disabled={isSubmitting}>     
-                                Create your account
+                                Log In
                              </AuthButton>
 
                             <CheckboxRow>

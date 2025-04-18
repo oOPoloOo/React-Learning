@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react";
 import FooterContext from "../../contexts/FoooterContext";
 import styled from "styled-components";
 import GameCard from "../UI/molecules/GameCard";
+import useGamesContext from "../../contexts/GamesContex";
 
 
 const Home = styled.div`
@@ -16,25 +17,43 @@ const Home = styled.div`
         margin: 0;
         padding: 15px;
     }
+
+    > .cardsContainer
+  {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;    
+}
 `;
 
 const HomePage = () => {
 
+    const { games } = useGamesContext(); 
     const {setShowFooter } = useContext(FooterContext);
 
     useEffect(() => {
         setShowFooter(true);
     }, [setShowFooter]);  
     
+
+   
     return (  
-        <>
+        
         <Home>
-        <GameCard/>
-        <GameCard/>
-        <GameCard/>
-        </Home>
-       
-        </>
+            <div className="cardsContainer">
+            {!games.length ? (
+                <p>Loading...</p>
+                ) :
+                (
+                games.map((game) => (
+                    <GameCard data={game} key={game.id} />
+                ))
+                )           
+            }           
+            </div>        
+        </Home>      
+   
     );
 }
  

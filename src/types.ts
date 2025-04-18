@@ -1,3 +1,5 @@
+import { ActionTypes } from "./contexts/GamesContex"
+
 export type User = {
   id: string;
   username: string;
@@ -5,7 +7,7 @@ export type User = {
   password: string;
   passwordText: string;
   profilePicture?: string;
-  role: 'customer' | 'admin';
+  photo: string,
   joined: string;
 };
 export type ChildrenProp = {
@@ -25,11 +27,30 @@ export type UsersContextTypes = {
 
 export interface LoginValues {
   email: string;
-  password: string;
+  password: string;  
   stayLoggedIn: boolean;
 }
 
 export type SearchContextType = {
   searchValue: string;
   setSearchValue: (value: string) => void;
-};
+}; 
+
+export type Game = {
+    id: string,
+    title: string,
+    releaseYear: number,
+    eirinCategory: string,
+    reviews: number,    
+    photo: string, 
+    genre: string[] 
+  }
+  
+  export type GameContextTypes = {
+    games: Game[],
+    dispatch: React.ActionDispatch<[action: ActionTypes]>
+    addNewGame: (newGame: Game) => void,
+    deleteOneGame: (id: Game["id"]) => void,
+    findGame: (id: Game["id"]) => Game | string
+  }
+  

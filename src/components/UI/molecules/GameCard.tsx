@@ -1,13 +1,12 @@
-import React from 'react';
 import { Card, CardContent, CardMedia, Typography, IconButton } from '@mui/material';
 import styled from 'styled-components';
+import { Game } from '../../../types';
 
 const StyledCard = styled(Card)`
   background-color: #181818;
   color: white;
   border-radius: 10px;
-  max-width: 300px;
-  min-width: 235.4px;
+  width: 300px; 
   height:330px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 `;
@@ -24,22 +23,29 @@ const PlusButton = styled(IconButton)`
   }
 `;
 
-const GameCard = () => {
-  return (
+type Props = 
+{
+data: Game;
+};
+  
+const GameCard: React.FC<Props> = ({ data }) => {
+
+return ( 
+    
     <StyledCard>
       <CardImage
-        image="path_to_image.jpg"  // Replace this with the actual path of the image
-        title="Orphans"
+        image={data.photo}  
+        title=""
       />
       <CardContent>
         <Typography variant="h5" component="div">
-          Orphans
-        </Typography>
+        {data.title}
+        </Typography>       
         <Typography color="text.secondary">
-          Adventure
+          {data.genre[0]}
         </Typography>
         <Typography variant="caption" color="text.secondary">
-          Apr 18
+        {data.releaseYear}
         </Typography>
         <PlusButton>
           +
@@ -50,3 +56,5 @@ const GameCard = () => {
 };
 
 export default GameCard;
+
+

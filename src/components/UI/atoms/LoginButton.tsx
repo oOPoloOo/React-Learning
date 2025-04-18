@@ -19,8 +19,15 @@ const LoginBtn = styled.div`
         border:3px solid #0073f4;    
         border-radius:50%;
         -moz-border-radius:50%;
-        -webkit-border-radius:50%;                    
-    }             
+        -webkit-border-radius:50%;       
+    } 
+    
+    #avatar 
+    {
+        object-fit: fit;
+        height: 42px;
+    }
+   
 `;
 
 const FaceIStyled = styled(FaceIcon)`
@@ -32,17 +39,35 @@ const FaceIStyled = styled(FaceIcon)`
   }
 `;
 
+type Props = {
+    data: string;
+  };
 
-const LoginButton = () => {
+const LoginButton: React.FC<Props>  = ({ data }) => {
+
+    console.log("LoginButton data", data);
     return ( 
         <LoginBtn>
-            {/* <nav></nav> */}
-       
-            <div className='rounded'>
-                <FaceIStyled className={"override"}/>
-            </div>     
-         </LoginBtn>
-     );
+            {data !== "" ? 
+                (
+                    <>                               
+                        <div className='rounded'>
+                            <img src={data} id="avatar"  alt="" />
+                        </div>   
+                    </>
+                ) 
+                : 
+                (
+                    <>
+                        <div className='rounded'>
+                            <FaceIStyled className={"override"}/>
+                        </div>
+                    </>
+                )
+            }
+            
+        </LoginBtn>
+    );
 }
  
 export default LoginButton;

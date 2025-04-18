@@ -35,3 +35,7 @@ const FooterContextProvider= ({ children }: FooterContextProviderProps) => {
 export { FooterContextProvider };
 export type { FooterContextInterface, FooterContextProviderProps };
 export default  FooterContext;
+
+
+
+

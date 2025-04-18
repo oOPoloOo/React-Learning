@@ -6,8 +6,46 @@
       "releaseYear": 1987,
       "eirinCategory": "PG-13",
       "reviews": 64,
-      "photo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png"
+      "photo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png",
+      "genre": ["Fighting", "Arcade"]
+    },
+    {
+      "id": "2",
+      "title": "The Legend of Zelda",
+      "releaseYear": 1986,
+      "eirinCategory": "E",
+      "reviews": 98,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zelda_2017.svg/500px-Zelda_2017.svg.png",
+      "genre": ["Action-Adventure", "Fantasy"]
+    },
+    {
+      "id": "3",
+      "title": "Super Mario Bros.",
+      "releaseYear": 1985,
+      "eirinCategory": "E",
+      "reviews": 120,
+      "photo": "https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png",
+      "genre": ["Platformer", "Adventure"]
+    },
+    {
+      "id": "4",
+      "title": "Pac-Man",
+      "releaseYear": 1980,
+      "eirinCategory": "E",
+      "reviews": 150,
+      "photo": "https://upload.wikimedia.org/wikipedia/en/1/16/Pac_flyer.png",
+      "genre": ["Arcade", "Maze"]
+    },
+    {
+      "id": "5",
+      "title": "Tetris",
+      "releaseYear": 1984,
+      "eirinCategory": "E",
+      "reviews": 200,
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Tetris_logo.png/500px-Tetris_logo.png",
+      "genre": ["Puzzle", "Strategy"]
     }
+ 
   ],
   "users": [  
     {
@@ -15,8 +53,8 @@
       "username": "Kazys",
       "email": "kazys@info.com",
       "password": "$2b$10$Er.f.k2JeqzMn42pJHCKHOnV1fkJYeSd6njybcrwjJswtptudZbx.",
-      "passwordText": "123456789Aa!",
-      "role": "customer",
+      "passwordText": "123456789Aa!", 
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Logan_Japan_Premiere_Red_Carpet-_Hugh_Jackman_%2838445328406%29_%28rotated%29.jpg/330px-Logan_Japan_Premiere_Red_Carpet-_Hugh_Jackman_%2838445328406%29_%28rotated%29.jpg" ,
       "joined": "2025-04-18T06:50:27.106Z"
     },
     {
@@ -24,8 +62,8 @@
       "username": "RamuneK",
       "email": "ramunele@info.kuminskaite.com",
       "password": "$2b$10$QsG/cCj0yRJAfgMLd9IzR.bpKLMt595iRWPjB3Z7U8LkbqOve8UKm",
-      "passwordText": "RamuneK123!",
-      "role": "admin",
+      "passwordText": "RamuneK123!",    
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/A-czartoryska.jpg/330px-A-czartoryska.jpg" ,  
       "joined": "2025-04-18T09:06:21.822Z"
     }
   ]
