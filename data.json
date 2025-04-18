@@ -1,23 +1,5 @@
 {
-  "users": [
-    {
-      "id": "0591fe2e-57e4-4bba-a87e-cb59cd58c944",
-      "username": "Rokas",
-      "email": "rokas.petrunas@example.com",
-      "password": "$2b$10$62hqUhcSWTa2X4N/mZ6rGOzQcDrJ3SzFbYpAL0pX4Ie6QsrSAhZXy",
-      "passwordText": "Tomas123!",
-      "role": "customer",
-      "joined": "2024-04-16T08:08:39.439Z"
-    },
-    {
-      "id": "3780ec44-c37b-406f-b43b-a568def29e3c",
-      "username": "Srekas",
-      "email": "srekas@gmail.com",
-      "password": "$2b$10$yp3YhDYa2TUMEj/eJTdgq.YyaLsU9WGpooYMjvGvK.XQ5xg1ngQtm",
-      "passwordText": "Tomas123!",
-      "role": "admin",
-      "joined": "2025-04-16T08:08:39.439Z"
-    },
+  "users": [  
     {
       "id": "d22dba38-01ce-47d8-adc4-7c18c78ceab2",
       "username": "Kazys",
@@ -26,6 +8,15 @@
       "passwordText": "123456789Aa!",
       "role": "customer",
       "joined": "2025-04-18T06:50:27.106Z"
+    },
+    {
+      "id": "1cf56138-382c-45d0-80d9-95f0c5e9e667",
+      "username": "RamuneK",
+      "email": "ramunele@info.kuminskaite.com",
+      "password": "$2b$10$QsG/cCj0yRJAfgMLd9IzR.bpKLMt595iRWPjB3Z7U8LkbqOve8UKm",
+      "passwordText": "RamuneK123!",
+      "role": "admin",
+      "joined": "2025-04-18T09:06:21.822Z"
     }
   ]
 }
