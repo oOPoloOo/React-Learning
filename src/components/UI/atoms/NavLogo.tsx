@@ -17,6 +17,7 @@ const WebLogo = styled.div`
     > h2 
     {
         margin: 0;
+        color: var(--first-color);      
     }    
 `;
 

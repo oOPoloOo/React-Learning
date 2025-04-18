@@ -6,12 +6,12 @@ const GameSerchBtn = styled.button`
 
     height: 48px;
     border-radius:50px 50px 50px 50px;   
-
+    background-color: rgba(229,229,229,255);
     > div 
     {
         display: flex;
         justify-content: center;
-        align-items:  center;
+        align-items: center;
         gap: 5px;
 
         margin: 0 10px;
@@ -19,7 +19,7 @@ const GameSerchBtn = styled.button`
         > span 
         {
             margin-right: 5px;
-            color: blue;
+            color: rgba(0,0,0,255);
         }
     }
            

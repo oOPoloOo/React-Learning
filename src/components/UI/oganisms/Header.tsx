@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import LoginBtn from '../atoms/LoginButton';
 import NavLogo from '../atoms/NavLogo';
 import SearchButton from '../atoms/SearchButton';
+import { Link } from 'react-router';
 
 const HeaderS = styled.header`
     margin: 0;
@@ -9,7 +10,7 @@ const HeaderS = styled.header`
     height: 84px;
     width: auto;
     min-width: 240px;
-    background-color: lightblue;
+    background-color: #531750;
    
     display: flex;
     justify-content: center;
@@ -22,6 +23,16 @@ const HeaderS = styled.header`
         height: 48px;
         width: 95%;
 
+        > a 
+        {
+            text-decoration: none;
+        }
+
+        > a:hover
+        {
+            text-decoration: underline;
+            text-decoration-color: var(--first-color);      
+        }
         > div#btnContainer 
         {
             display: flex;
@@ -42,7 +53,9 @@ const Header = () => {
                 </a> 
                 
                 <div id='btnContainer'>
-                  <LoginBtn/>
+                <Link to={`/to`}>                 
+                    <LoginBtn/>
+                </Link>
                   <SearchButton/>
                 </div>
             </div>
