@@ -1,4 +1,14 @@
 {
+  "games": [
+    {
+      "id": "1",
+      "title": "Street Fighter",
+      "releaseYear": 1987,
+      "eirinCategory": "PG-13",
+      "reviews": 64,
+      "photo": "https://upload.wikimedia.org/wikipedia/en/e/e9/Street_Fighter_Logo.png"
+    }
+  ],
   "users": [  
     {
       "id": "d22dba38-01ce-47d8-adc4-7c18c78ceab2",
